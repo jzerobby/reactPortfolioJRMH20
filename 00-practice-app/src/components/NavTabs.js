@@ -1,44 +1,59 @@
 import React from 'react';
 
+const styles = {
+  card: {
+    margin: 20,
+    background: '#6E6E6E',
+    padding: '10px'
+  },
+  heading: {
+    lineHeight: 3,
+    fontSize: '2rem',
+    padding: '0 20px',
+    display: 'inline-block',
+  },
+  font: {
+    color: '#BAFF39',
+    margin: 'theme.spacing(5)',
+  }
+};
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </a>
-      </li>
-      <li className="nav-item">
+    <ul style={styles.card}>
+      <li style={styles.heading}>
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
 
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
+          style={styles.font}
+        > About Me
         </a>
       </li>
-      <li className="nav-item">
+      <li style={styles.heading}>
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          style={styles.font}
+        > Resume
+        </a>
+      </li>
+      <li style={styles.heading}>
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
 
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+          style={styles.font}
         >
-          Blog
+          Portfolio
         </a>
       </li>
-      <li className="nav-item">
+      <li style={styles.heading}>
         <a
           href="#contact"
 
           onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          style={styles.font}
         >
           Contact
         </a>
