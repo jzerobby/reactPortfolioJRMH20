@@ -1,4 +1,4 @@
-# reactPortfolioJRMH20
+# Homework 20: React.js Portfolio 
 
 ## Description
 As a future full stack web developer means I am going to be part of a community someday. This application is a place not only to share my projects while applying for jobs or while working as a freelancer but also to share my work with other developers and collaborate on projects in near future.
